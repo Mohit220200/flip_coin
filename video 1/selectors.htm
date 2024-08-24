@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+        /*element selectors*/
+        div{
+           /* background-color: red;
+            color: yellow;8*/
+        }
+        /*class selectors*/
+        .red{
+            background-color: red;
+        }
+        /* id selectors*/
+        #green{
+
+            background-color: red;
+        }
+        /* child selector*/
+        div >p {color:rebeccapurple;
+            background-color: yellow;
+
+
+        }
+        /* Descendent Selectors*/
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+        /*univarsal*/
+        *{
+           margin: 0;
+           padding: 0; 
+        }
+        /*Pseudo selectors*/
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+           background-color: red;
+        }
+        a:hover{
+            background-color: black;
+        }
+     .box{
+        background-color: aqua;
+     }
+     .box1{
+        color: yellow;
+        margin: 5px;
+        padding: 10px;
+        border: 2px solid blue;
+        height: 200px;
+        box-sizing: border-box;
+
+     }
+     .box2{
+        color: black;
+     }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="red"> i am div
+        <article>
+            <p>i am a div</p>
+        </article>
+    </div>
+    <div id="green"> i am a div
+        <p> i am a para inside the div</p>
+    </div>
+    <a href="https:www.google.com">Go to Google</a>
+    <div class="box box1"> I am box1</div>
+    <div class="box box2"> I am a box2</div>
+</body>
+</html>

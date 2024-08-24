@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+
+            float: left;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
+        }
+        [data-color="primary"]{
+            margin-top: 45px;
+        }
+        .card:nth-child(even){
+            background-color: blue;
+        }
+        .card::after{
+            content:"Mohit ki Website";
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        .card::first-letter{
+            color: red;
+            font-size: 40px;
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="cards">
+        <img width="230" src="https://c8.alamy.com/comp/BKM4RN/a-boat-man-using-circular-basket-boat-india-BKM4RN.jpg" alt="">
+        
+        <div data-color="primary" class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque soluta similique, placeat veniam fugiat ex dolores laboriosam? Culpa quasi recusandae ut expedita a dignissimos similique animi porro, facilis quod dicta.</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quibusdam iste itaque autem nisi esse odit, quisquam officiis fuga numquam qui totam molestiae et id reprehenderit, tempora assumenda quaerat ullam eos omnis. Possimus est eius, id facilis laudantium quae, accusamus quasi hic ipsam libero placeat eum error dolores a corporis nihil dolorem doloremque? Non velit beatae, consequuntur sit explicabo provident, nulla corporis sint ea temporibus rerum suscipit distinctio reiciendis animi tempora harum amet atque tempore fuga? Eaque amet omnis quam esse libero, quis, sed, incidunt laudantium ipsam magni iure provident ea repellendus corrupti ducimus? Ab consequuntur et animi eos, explicabo similique minima, ducimus est placeat quisquam quod non iure cupiditate nostrum. Ipsam, sint perspiciatis? Quaerat dicta ad voluptatibus fugiat error ipsum dolorum, nulla nemo eligendi vel! Atque minima sequi eos nesciunt autem unde provident modi libero culpa voluptates optio quod repudiandae amet saepe, nisi nobis nostrum ex rerum deserunt labore fuga velit alias tempore quas! Dignissimos accusantium natus, fugiat, consequuntur nulla eos accusamus excepturi ea, molestias rerum itaque quibusdam architecto culpa reiciendis est dolores! Molestiae, exercitationem, in dicta corrupti modi optio officiis accusantium obcaecati, rerum deserunt commodi! Voluptatum aperiam saepe, cum tenetur aliquam veritatis ducimus voluptatem doloribus minima a voluptatibus?</div>
+        <div class="card">card3</div>
+    </div>
+    
+</body>
+</html>

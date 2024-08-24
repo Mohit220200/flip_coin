@@ -1,0 +1,1 @@
+alert("harmfull be safe")
